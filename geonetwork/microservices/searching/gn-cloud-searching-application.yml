@@ -17,8 +17,8 @@ eureka:
 
 gn:
   datadir: ${java.io.tmpdir}/gn-datadir
-  baseurl: https://georchestra.mydomain.org/geonetwork
-  legacy.url: https://georchestra.mydomain.org/geonetwork
+  baseurl: https://ksk-dev.pigeosolutions.fr/geonetwork
+  legacy.url: https://ksk-dev.pigeosolutions.fr/geonetwork
   linkToLegacyGN4: true
   language.default: fr
   site:
