@@ -84,3 +84,5 @@ georchestra:
           json-user: true
       geoserver:
         target: ${georchestra.gateway.services.geoserver.target}
+      superset:
+        target: ${georchestra.gateway.services.superset.target}
