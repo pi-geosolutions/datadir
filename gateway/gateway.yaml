@@ -90,3 +90,7 @@ georchestra:
         target: ${georchestra.gateway.services.mviewer.target}
       mviewerstudio:
         target: ${georchestra.gateway.services.mviewerstudio.target}
+        access-rules:
+        - intercept-url: /mviewerstudio/**
+          anonymous: false
+          allowed-roles: USER
