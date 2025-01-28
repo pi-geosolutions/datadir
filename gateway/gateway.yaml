@@ -86,6 +86,13 @@ georchestra:
         target: ${georchestra.gateway.services.geoserver.target}
       superset:
         target: ${georchestra.gateway.services.superset.target}
+        headers:
+          proxy: true
+          username: true
+          roles: true
+          email: true
+          firstname: true
+          lastname: true
       mviewer:
         target: ${georchestra.gateway.services.mviewer.target}
       mviewerstudio:
