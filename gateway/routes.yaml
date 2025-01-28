@@ -63,6 +63,14 @@ spring:
         uri: ${georchestra.gateway.services.superset.target}
         predicates:
         - Path=/dash/**
+      - id: mviewer
+        uri: ${georchestra.gateway.services.mviewer.target}
+        predicates:
+        - Path=/mviewer/**
+      - id: mviewerstudio
+        uri: ${georchestra.gateway.services.mviewerstudio.target}
+        predicates:
+        - Path=/mviewerstudio/**
 
 georchestra.gateway.services:
   console.target: http://${CONSOLE_HOST}:8080/console/
@@ -76,3 +84,5 @@ georchestra.gateway.services:
   mapstore.target: http://${MAPSTORE_HOST}:8080/mapstore/
   ogc-api-records.target: http://${OGC_API_RECORDS_HOST}:8080/ogc-api-records/
   superset.target: http://${SUPERSET_HOST}:8088/dash/
+  mviewer.target: http://${MVIEWER_HOST}:80/
+  mviewerstudio.target: http://${MVIEWERSTUDIO_HOST}:8000/mviewerstudio/
