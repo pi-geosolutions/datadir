@@ -88,3 +88,5 @@ georchestra:
         target: ${georchestra.gateway.services.superset.target}
       mviewer:
         target: ${georchestra.gateway.services.mviewer.target}
+      mviewerstudio:
+        target: ${georchestra.gateway.services.mviewerstudio.target}
