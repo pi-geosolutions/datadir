@@ -67,6 +67,8 @@ spring:
         uri: ${georchestra.gateway.services.mviewer.target}
         predicates:
         - Path=/mviewer/**
+        filters:
+        - RewritePath=/mviewer/(?<segment>.*),/$\{segment}
       - id: mviewerstudio
         uri: ${georchestra.gateway.services.mviewerstudio.target}
         predicates:
