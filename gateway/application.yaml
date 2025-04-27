@@ -18,3 +18,11 @@ spring:
       filter:
         secure-headers:
           referrer-policy: strict-origin
+
+      # httpclient:
+      #   pool:
+      #     max-idle-time: 30000
+      #     leasing-strategy: lifo
+          # eviction-interval: 1000
+        # connect-timeout: 30s
+        # response-timeout: 30s

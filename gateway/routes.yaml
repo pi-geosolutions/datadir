@@ -63,9 +63,9 @@ spring:
         uri: ${georchestra.gateway.services.superset.target}
         predicates:
         - Path=/superset/**
-        metadata:
-          response-timeout: 6000
-          connect-timeout: 6000
+        # metadata:
+        #   response-timeout: -1
+        #   connect-timeout: 2000
       - id: mviewer
         uri: ${georchestra.gateway.services.mviewer.target}
         predicates:
