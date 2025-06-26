@@ -44,7 +44,7 @@ logging:
         url: true
         query-string: true
         parameters: true
-        headers: false
+        headers: true
         headers-pattern: ".*"
         cookies: false
         remote-addr: true
