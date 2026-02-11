@@ -32,7 +32,7 @@ spring:
           - content-security-policy
           - x-frame-options
           - x-content-type-options
-          referrer-policy: strict-origin
+          referrer-policy: strict-origin-when-cross-origin
           enabled: true
           frame-options: SAMEORIGIN
           xss-protection-header: 0
